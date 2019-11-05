@@ -29,3 +29,15 @@ end
 def add_string_as_number(string_1, string_2)
   string_1.to_i + string_2.to_i
 end
+
+def number_to_full_month_name(number)
+  months = ["January", "February", "March", "April", "May", "June", "July", "August",
+  "September", "October", "November", "December"]
+  return months[number - 1]
+end
+
+def number_to_short_month_name(number)
+  short_months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct",
+    "Nov", "Dec"]
+    return short_months[number - 1]
+  end
