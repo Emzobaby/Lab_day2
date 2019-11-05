@@ -45,3 +45,7 @@ def number_to_short_month_name(number)
 def volume_of_cube(l, b, h)
   l * b * h
 end
+
+def volume_of_sphere(r)
+  v = (4/3) * (3.14) * (r**3)
+end
