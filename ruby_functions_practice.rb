@@ -41,3 +41,7 @@ def number_to_short_month_name(number)
     "Nov", "Dec"]
     return short_months[number - 1]
   end
+
+def volume_of_cube(l, b, h)
+  l * b * h
+end
