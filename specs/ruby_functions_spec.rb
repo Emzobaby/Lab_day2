@@ -36,7 +36,7 @@ class FunctionsTest < MiniTest::Test
   end
 
   def test_join_string()
-    string_1 = "Mary had a little lamb, "
+    string_1 = "Mary had a little lamb,"
     string_2 = "its fleece was white as snow"
     joined_string = join_string( string_1, string_2 )
     assert_equal( "Mary had a little lamb, its fleece was white as snow", joined_string )
@@ -81,17 +81,20 @@ class FunctionsTest < MiniTest::Test
 
   #Given the length of a side of a cube calculate the volume
   def test_volume_of_cube()
-    #add test code here
+    volume_result = volume_of_cube(1, 2, 3)
+    assert_equal(6, volume_result)
   end
 
   #Given the radius of a sphere calculate the volume
   def test_volume_of_sphere()
-    #add test code here
+    volume_result = volume_of_sphere(2).to_i
+    assert_equal(33, volume_result)
   end
 
   #Given a value in farenheit, convert this into celsius.
   def test_fahrenheit_to_celsius()
-    #add test code here
+    celsius_result = fahrenheit_to_celsius(132).to_i
+    assert_equal(55, celsius_result)
   end
 
 

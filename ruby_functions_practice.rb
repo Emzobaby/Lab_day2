@@ -47,5 +47,9 @@ def volume_of_cube(l, b, h)
 end
 
 def volume_of_sphere(r)
-  v = (4/3) * (3.14) * (r**3)
+  v = (4.0/3.0) * (3.14) * (r**3)
+end
+
+def fahrenheit_to_celsius(f)
+  c = (f-32) * (5.0/9.0)
 end
